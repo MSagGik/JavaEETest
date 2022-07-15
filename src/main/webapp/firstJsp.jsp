@@ -21,5 +21,11 @@
             out.println("<p>" +"Hello: " + i + "</p>");
             };
         %>
+
+        <%@ page import="com.example.javaeetest.logic.TestClass" %>
+        <% TestClass testClass = new TestClass(); %>
+        <%= testClass.getInfo() %>
+
     </p>
 </body>
+</html>
