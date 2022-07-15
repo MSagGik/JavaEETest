@@ -13,7 +13,13 @@
 <body>
     <h1>Testing JSP</h1>
     <p>
-        <%= "Hello world!" %>
+        <% java.util.Date now = new java.util.Date();
+           String someString = "Текущая дата : " + now;
+        %>
+        <%= someString %>
+        <% for (int i = 0; i < 10; i++) {
+            out.println("<p>" +"Hello: " + i + "</p>");
+            };
+        %>
     </p>
 </body>
-</html>
